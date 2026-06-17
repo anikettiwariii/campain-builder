@@ -45,7 +45,7 @@ def get_driver():
         drv.verify_connectivity()
         _driver    = drv
         _available = True
-        log.info("Neo4j connected at %s", _NEO4J_URI)
+        log.info("Neo4j connected at %s", uri)
         return _driver
     except Exception as exc:
         log.warning("Neo4j unavailable (%s) — falling back to NetworkX", exc)

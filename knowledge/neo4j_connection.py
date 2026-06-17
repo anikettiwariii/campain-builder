@@ -20,10 +20,6 @@ try:
 except ImportError:
     pass
 
-_NEO4J_URI      = os.environ.get("NEO4J_URI",      "bolt://localhost:7687")
-_NEO4J_USER     = os.environ.get("NEO4J_USER",     "neo4j")
-_NEO4J_PASSWORD = os.environ.get("NEO4J_PASSWORD", "")
-
 _driver = None          # module-level singleton
 _available: bool = None # None = not yet probed
 
@@ -35,13 +31,17 @@ def get_driver():
         return None
     if _driver is not None:
         return _driver
-    if not _NEO4J_PASSWORD:
+    # Read credentials lazily so Streamlit secrets are loaded first
+    uri      = os.environ.get("NEO4J_URI",      "bolt://localhost:7687")
+    user     = os.environ.get("NEO4J_USER",     "neo4j")
+    password = os.environ.get("NEO4J_PASSWORD", "")
+    if not password:
         log.info("NEO4J_PASSWORD not set — skipping Neo4j, using NetworkX fallback")
         _available = False
         return None
     try:
         from neo4j import GraphDatabase
-        drv = GraphDatabase.driver(_NEO4J_URI, auth=(_NEO4J_USER, _NEO4J_PASSWORD))
+        drv = GraphDatabase.driver(uri, auth=(user, password))
         drv.verify_connectivity()
         _driver    = drv
         _available = True

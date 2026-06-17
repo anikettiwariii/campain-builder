@@ -1521,8 +1521,7 @@ def compute_readiness_score(
                             pid=_ev_pid,
                         ).data()
                     )
-    except Exception:
-        try:
+        elif _matched_prod_ids:
             from knowledge.graph_builder import build_marketing_graph as _ev_build_g
             _ev_G = _ev_build_g()
             for _ev_pp_id, _ev_attr in _ev_G.nodes(data=True):
@@ -1534,8 +1533,8 @@ def compute_readiness_score(
                     for _ev_prod_id in _matched_prod_ids
                 ):
                     _green_pp_ids.add(_ev_pp_id)
-        except Exception:
-            pass
+    except Exception:
+        pass
 
     _named_proof = any(
         pp.get("id", "") in _green_pp_ids

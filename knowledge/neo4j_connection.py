@@ -35,6 +35,8 @@ def get_driver():
     uri      = os.environ.get("NEO4J_URI",      "bolt://localhost:7687")
     user     = os.environ.get("NEO4J_USERNAME") or os.environ.get("NEO4J_USER") or "neo4j"
     password = os.environ.get("NEO4J_PASSWORD", "")
+    log.info("Neo4j attempt: uri=%s user=%s pwd_len=%d pwd_prefix=%s",
+             uri, user, len(password), password[:6] if password else "EMPTY")
     if not password:
         log.info("NEO4J_PASSWORD not set — skipping Neo4j, using NetworkX fallback")
         _available = False

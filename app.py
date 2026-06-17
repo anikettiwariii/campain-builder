@@ -10,7 +10,7 @@ import streamlit.components.v1 as _components
 # ── Load secrets into env before any module that creates API clients ──────────
 for _sk in ["ANTHROPIC_API_KEY", "ASANA_TOKEN", "ASANA_WORKSPACE_GID",
             "APP_USERNAME", "APP_PASSWORD",
-            "NEO4J_URI", "NEO4J_USER", "NEO4J_PASSWORD"]:
+            "NEO4J_URI", "NEO4J_USER", "NEO4J_USERNAME", "NEO4J_PASSWORD"]:
     try:
         if _sk in st.secrets and not os.environ.get(_sk):
             os.environ[_sk] = st.secrets[_sk]
@@ -3165,8 +3165,14 @@ if st.session_state.enriched_brief and not st.session_state.clarifying:
                     f'style="font-size:1.125rem;color:#3D7B5B;text-decoration:none;">✓ In Asana →</a></div>',
                     unsafe_allow_html=True,
                 )
-            else:
+            elif st.session_state.get("asana_sidebar_workspace", ""):
                 _ab_asana_clicked = st.button("Push to Asana", key="asana_btn")
+            else:
+                st.markdown(
+                    '<div style="padding-top:0.45rem;font-size:1.0625rem;color:#A0A0B0;">'
+                    'Add Asana token in sidebar first</div>',
+                    unsafe_allow_html=True,
+                )
         with _ab_c[3]:
             if st.session_state.current_campaign_db_id:
                 _saved_sc = _STATUS_C.get(_disp_s, "#606070")

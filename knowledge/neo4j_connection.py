@@ -33,7 +33,7 @@ def get_driver():
         return _driver
     # Read credentials lazily so Streamlit secrets are loaded first
     uri      = os.environ.get("NEO4J_URI",      "bolt://localhost:7687")
-    user     = os.environ.get("NEO4J_USER",     "neo4j")
+    user     = os.environ.get("NEO4J_USERNAME") or os.environ.get("NEO4J_USER") or "neo4j"
     password = os.environ.get("NEO4J_PASSWORD", "")
     if not password:
         log.info("NEO4J_PASSWORD not set — skipping Neo4j, using NetworkX fallback")

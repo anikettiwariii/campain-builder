@@ -990,7 +990,7 @@ with st.sidebar:
     with st.expander("Asana Settings", expanded=False):
         _sb_asana_token = st.text_input(
             "Personal Access Token",
-            value=st.session_state.asana_sidebar_token,
+            value=st.session_state.get("asana_sidebar_token", ""),
             type="password",
             placeholder="Paste your Asana PAT…",
             key="asana_pat_input",
@@ -1010,10 +1010,10 @@ with st.sidebar:
                 st.session_state.asana_sidebar_token     = ""
                 st.session_state.asana_sidebar_workspace = ""
                 st.rerun()
-        if st.session_state.asana_sidebar_workspace:
+        if st.session_state.get("asana_sidebar_workspace", ""):
             st.markdown(
                 f'<div style="font-size:1.0625rem;color:#3D7B5B;margin-top:0.3rem;">'
-                f'Connected · workspace {st.session_state.asana_sidebar_workspace}</div>',
+                f'Connected · workspace {st.session_state.get("asana_sidebar_workspace", "")}</div>',
                 unsafe_allow_html=True,
             )
         else:
@@ -1584,22 +1584,8 @@ if st.session_state.enriched_brief and not st.session_state.clarifying:
             }
 
             # Generate PPTX and cache bytes
-            _agent_dir = os.path.dirname(os.path.abspath(__file__))
-            import tempfile as _tf
-            with _tf.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as _f:
-                json.dump({"deck_content": _deck_content}, _f)
-                _json_tmp = _f.name
-            _pptx_tmp = _json_tmp.replace(".json", ".pptx")
-            try:
-                _proc = subprocess.run(
-                    ["node", "generate_deck.js", _json_tmp, _pptx_tmp],
-                    capture_output=True, text=True, cwd=_agent_dir, timeout=30
-                )
-                if _proc.returncode == 0 and os.path.exists(_pptx_tmp):
-                    st.session_state.pptx_bytes = open(_pptx_tmp, "rb").read()
-            finally:
-                if os.path.exists(_json_tmp): os.unlink(_json_tmp)
-                if os.path.exists(_pptx_tmp): os.unlink(_pptx_tmp)
+            from generate_deck import generate_pptx as _gen_pptx
+            st.session_state.pptx_bytes = _gen_pptx(_deck_content)
 
         except _ProductUnmatched as _pum:
             st.session_state.product_unmatched        = True

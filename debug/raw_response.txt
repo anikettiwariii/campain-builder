@@ -1,0 +1,198 @@
+{
+  "phases": [
+    {
+      "phase": "Phase 1: Foundation & Asset Build",
+      "weeks": "Weeks 1-3",
+      "milestone": "All campaign assets created, reviewed, and loaded into marketing systems",
+      "tasks": [
+        {
+          "task": "Finalize campaign brief and obtain stakeholder sign-off",
+          "owner": "Marketing Ops",
+          "due_day": "Day 2"
+        },
+        {
+          "task": "Write HTML email copy for VP of L&D nurture sequence (3-touch cadence) using 'AgentHub turns Docebo into an autonomous learning engine' positioning",
+          "owner": "Marketing",
+          "due_day": "Day 5"
+        },
+        {
+          "task": "Design HTML email templates aligned to confident tone and AI-powered learning visual language",
+          "owner": "Design",
+          "due_day": "Day 8"
+        },
+        {
+          "task": "Build landing page for demo CTA with VP-specific messaging and social proof",
+          "owner": "Marketing",
+          "due_day": "Day 10"
+        },
+        {
+          "task": "QA and review all email assets for compliance, links, and rendering across clients",
+          "owner": "Marketing Ops",
+          "due_day": "Day 12"
+        },
+        {
+          "task": "Configure campaign tracking: UTMs, CRM campaign object, and attribution model",
+          "owner": "Marketing Ops",
+          "due_day": "Day 12"
+        },
+        {
+          "task": "Build email nurture sequence in MAP (3 emails, VP segment, demo CTA)",
+          "owner": "Marketing Ops",
+          "due_day": "Day 14"
+        },
+        {
+          "task": "Create ICP target list: VP of Learning & Development, validated and enriched",
+          "owner": "Demand Gen",
+          "due_day": "Day 14"
+        },
+        {
+          "task": "Load target list into CRM and MAP, suppress existing customers and active opportunities",
+          "owner": "Marketing Ops",
+          "due_day": "Day 15"
+        },
+        {
+          "task": "Human review checkpoint: Pre-launch asset and systems audit",
+          "owner": "Marketing Lead",
+          "due_day": "Day 15"
+        }
+      ]
+    },
+    {
+      "phase": "Phase 2: Launch & Active Outreach",
+      "weeks": "Weeks 4-6",
+      "milestone": "Campaign live across all channels, paid and organic running, SDR sequences activated, first demo requests captured",
+      "tasks": [
+        {
+          "task": "Launch Email 1 to VP of L&D segment: Pain-focused subject line, manual learning problem hook, soft demo CTA",
+          "owner": "Marketing Ops",
+          "due_day": "Day 22"
+        },
+        {
+          "task": "Activate LinkedIn Sponsored Content targeting VP of L&D titles with AI-powered learning angle",
+          "owner": "Demand Gen",
+          "due_day": "Day 22"
+        },
+        {
+          "task": "Brief SDR team on campaign messaging, ICP pain points, and demo CTA talk track",
+          "owner": "Marketing",
+          "due_day": "Day 22"
+        },
+        {
+          "task": "SDR team begins outbound sequence to campaign target list in parallel with email nurture",
+          "owner": "SDR Team",
+          "due_day": "Day 23"
+        },
+        {
+          "task": "Monitor Email 1 deliverability, open rates, and click rates; flag anomalies within 48 hours",
+          "owner": "Marketing Ops",
+          "due_day": "Day 24"
+        },
+        {
+          "task": "Launch Email 2 to VP segment: Proof-point focused, highlight P1/PP1, reinforce demo CTA",
+          "owner": "Marketing Ops",
+          "due_day": "Day 29"
+        },
+        {
+          "task": "Human review checkpoint: Mid-campaign performance review against open rate, CTR, and demo request benchmarks",
+          "owner": "Marketing Lead",
+          "due_day": "Day 30"
+        },
+        {
+          "task": "Adjust LinkedIn ad targeting or creative based on first-week CTR data",
+          "owner": "Demand Gen",
+          "due_day": "Day 31"
+        },
+        {
+          "task": "Route all demo form fills to sales within SLA of 4 business hours; confirm routing rules are active",
+          "owner": "Marketing Ops",
+          "due_day": "Day 22"
+        },
+        {
+          "task": "Publish supporting organic LinkedIn post from company page reinforcing autonomous learning angle",
+          "owner": "Marketing",
+          "due_day": "Day 33"
+        },
+        {
+          "task": "Launch Email 3 to VP segment: Urgency-driven, customer proof or stat, strong demo CTA",
+          "owner": "Marketing Ops",
+          "due_day": "Day 36"
+        },
+        {
+          "task": "Compile week 4-6 performance snapshot: demos booked, email engagement, paid CAC estimate",
+          "owner": "Marketing Ops",
+          "due_day": "Day 40"
+        }
+      ]
+    },
+    {
+      "phase": "Phase 3: Optimization & Handoff",
+      "weeks": "Weeks 7-8",
+      "milestone": "Campaign wrapped, full performance report delivered, learnings documented, pipeline sourced attributed and handed to sales",
+      "tasks": [
+        {
+          "task": "Suppress email responders from further nurture and flag demo-booked contacts for sales follow-up sequence",
+          "owner": "Marketing Ops",
+          "due_day": "Day 43"
+        },
+        {
+          "task": "Run A/B analysis on email subject lines and CTAs to document winning variants for future use",
+          "owner": "Marketing Ops",
+          "due_day": "Day 45"
+        },
+        {
+          "task": "Human review checkpoint: Final campaign performance review with Marketing, Sales, and Demand Gen leads",
+          "owner": "Marketing Lead",
+          "due_day": "Day 46"
+        },
+        {
+          "task": "Pause or reallocate LinkedIn paid budget based on conversion efficiency data",
+          "owner": "Demand Gen",
+          "due_day": "Day 46"
+        },
+        {
+          "task": "Sales review: Audit quality of demo requests, gather rep feedback on lead readiness and messaging resonance",
+          "owner": "Sales Lead",
+          "due_day": "Day 47"
+        },
+        {
+          "task": "Build and distribute full campaign performance report: demos driven, pipeline sourced, email metrics, paid metrics",
+          "owner": "Marketing Ops",
+          "due_day": "Day 50"
+        },
+        {
+          "task": "Document campaign learnings and recommendations in campaign wiki for future L&D-targeted campaigns",
+          "owner": "Marketing",
+          "due_day": "Day 52"
+        },
+        {
+          "task": "Archive campaign assets, templates, and target list segments in shared drive with version labels",
+          "owner": "Marketing Ops",
+          "due_day": "Day 54"
+        },
+        {
+          "task": "Identify high-intent non-converting contacts for re-engagement in next campaign cycle",
+          "owner": "Demand Gen",
+          "due_day": "Day 55"
+        },
+        {
+          "task": "Present pipeline attribution to leadership and confirm sourced opportunities are active in CRM",
+          "owner": "Marketing Lead",
+          "due_day": "Day 56"
+        }
+      ]
+    }
+  ],
+  "success_metrics": [
+    "Minimum 20 demo requests booked from VP of L&D persona within the 8-week campaign window",
+    "Email nurture sequence achieves average open rate of 28% or higher and CTR of 4% or higher across all 3 touches",
+    "LinkedIn Sponsored Content delivers cost-per-click under $12 and generates at least 150 landing page visits",
+    "Demo-to-opportunity conversion rate of 35% or higher as measured in CRM within 2 weeks of demo completion",
+    "Total pipeline sourced attributed to campaign reaches $250,000 or more in projected ARR within the campaign attribution window"
+  ],
+  "human_review_checkpoints": [
+    "Day 15 - Pre-launch asset and systems audit: Marketing Lead reviews all email copy, landing page, tracking configuration, and list quality before any sends go live",
+    "Day 30 - Mid-campaign performance review: Marketing Lead, Demand Gen, and SDR Lead assess open rates, CTR, demo requests booked, and paid performance against benchmarks; approve any pivots to creative or targeting",
+    "Day 46 - Final campaign performance review: Cross-functional review with Marketing, Sales, and Demand Gen to evaluate total demos driven, pipeline sourced, and lead quality before budget reallocation and wind-down decisions are made",
+    "Day 47 - Sales quality audit: Sales Lead reviews demo request quality and provides structured feedback on whether campaign messaging aligned with actual buyer conversations and objections encountered"
+  ]
+}

@@ -1,0 +1,17 @@
+Campaign Brief: AgentHub Launch — Mid-Market L&D Leaders
+
+Product: Docebo AgentHub — an AI layer that lets L&D teams deploy autonomous learning agents across their organization without engineering support.
+
+ICP: VP of Learning & Development and Chief People Officers at mid-market B2B SaaS companies (500–2,000 employees). Companies currently using Docebo LMS but not yet on the AI tier. Teams where L&D is 2–5 people managing learning for 300–800 employees.
+
+Pain Point: L&D leaders are expected to personalize learning at scale but are running manual, one-size-fits-all programs. They're spending 60–70% of their time on content curation and admin instead of strategic program design. Their executives want proof that learning investment is tied to business outcomes, and they don't have the data to show it.
+
+Campaign Goal: Drive 40 qualified demo requests from existing Docebo customers in the mid-market segment within 60 days. Secondary goal: generate 3 customer case studies from early AgentHub adopters to support the broader launch.
+
+Tone: Confident but not hype-driven. These are pragmatic operators, not early adopters. They've seen AI promises before. Lead with outcomes, not features.
+
+Timeline: 8 weeks from brief to first pipeline review.
+
+Key Differentiator: Unlike generic AI tools bolted onto an LMS, AgentHub is built into the Docebo workflow. No integration tax. No IT ticket. L&D teams can deploy their first agent in a single afternoon.
+
+Channels: Email (HubSpot sequences to existing customer base), LinkedIn (sponsored content + organic), in-product messaging for eligible accounts, 1 live webinar.

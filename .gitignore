@@ -1,0 +1,10 @@
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+campaigns.db
+node_modules/
+*.key
+*.pdf

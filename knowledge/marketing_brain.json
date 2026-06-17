@@ -1,0 +1,1077 @@
+{
+  "meta": {
+    "version": "1.0",
+    "stage": "crawl",
+    "description": "Docebo Marketing Brain — crawl-stage knowledge graph for Campaign Builder Agent",
+    "last_updated": "June 2026"
+  },
+  "personas": [
+    {
+      "id": "vp_ld",
+      "title": "VP of Learning & Development",
+      "also_known_as": [
+        "Head of L&D",
+        "Director of Learning",
+        "L&D Director"
+      ],
+      "company_size": "500-2000 employees",
+      "team_size": "2-5 person L&D team",
+      "learner_population": "300-800 employees",
+      "industries": [
+        "B2B SaaS",
+        "Financial Services",
+        "Manufacturing",
+        "Retail"
+      ],
+      "pain_ids": [
+        "admin_overload",
+        "no_roi_proof",
+        "personalization_gap",
+        "skills_visibility"
+      ],
+      "motivations": [
+        "reclaim time for strategic work",
+        "prove learning ROI to CFO",
+        "scale programs without headcount"
+      ],
+      "language": [
+        "reclaim time",
+        "tie learning to business outcomes",
+        "personalize at scale",
+        "prove ROI to the CFO",
+        "strategic program design",
+        "move from admin to architect"
+      ],
+      "objections": [
+        "We already have a learning platform",
+        "Our IT team needs to approve new tools",
+        "We don't have budget for another AI tool",
+        "Our team is too small to manage another system"
+      ]
+    },
+    {
+      "id": "cpo",
+      "title": "Chief People Officer",
+      "also_known_as": [
+        "CHRO",
+        "VP of People",
+        "Head of People"
+      ],
+      "company_size": "500-5000 employees",
+      "pain_ids": [
+        "no_roi_proof",
+        "skills_visibility",
+        "ai_readiness_gap"
+      ],
+      "motivations": [
+        "connect learning to retention and performance",
+        "show board that people investment is working",
+        "build AI-ready workforce"
+      ],
+      "language": [
+        "workforce readiness",
+        "skills gaps",
+        "retention and performance data",
+        "business outcomes",
+        "executive reporting",
+        "AI literacy"
+      ],
+      "objections": [
+        "We need data before we invest",
+        "Show me how this ties to retention",
+        "Our managers won't adopt another tool"
+      ]
+    },
+    {
+      "id": "ld_program_manager",
+      "title": "L&D Program Manager",
+      "also_known_as": [
+        "Learning Specialist",
+        "Training Manager",
+        "Instructional Designer"
+      ],
+      "company_size": "200-2000 employees",
+      "pain_ids": [
+        "admin_overload",
+        "content_creation_time",
+        "personalization_gap"
+      ],
+      "motivations": [
+        "spend less time on admin",
+        "create engaging content faster",
+        "get credit for learner impact"
+      ],
+      "language": [
+        "content curation",
+        "learner engagement",
+        "course completion rates",
+        "admin time",
+        "manual enrollment",
+        "compliance tracking"
+      ],
+      "objections": [
+        "I don't have time to learn a new system",
+        "The setup looks complicated",
+        "I need something I can use today"
+      ]
+    }
+  ],
+  "pains": [
+    {
+      "id": "admin_overload",
+      "label": "Administrative Overload",
+      "description": "L&D teams spending 60-70% of their time on manual tasks — content curation, enrollment, reporting — instead of strategic program design",
+      "severity": "critical",
+      "customer_quotes": [
+        "The setup process can be pretty tedious — even simple admin tasks end up taking way more steps than they should",
+        "I don't have time to learn more and get more out of the system",
+        "It's a pain when I just need a quick view of where everyone's at without jumping through hoops",
+        "Legacy pages are very clunky and make the admin job tedious",
+        "I wish I could duplicate learning plans like you can courses — it would be a time saver"
+      ],
+      "docebo_solution": "AgentHub automates content curation, learner routing, and enrollment so L&D teams operate at 10x output without adding headcount",
+      "stat": "Up to 80% decrease in administrative costs reported by Docebo customers"
+    },
+    {
+      "id": "no_roi_proof",
+      "label": "Cannot Prove Learning ROI",
+      "description": "Learning leaders cannot connect training activity to business outcomes — retention, performance, revenue — so L&D is seen as a cost center not a strategic function",
+      "severity": "critical",
+      "customer_quotes": [
+        "The reporting and tracking features are particularly helpful for monitoring progress and measuring learning outcomes",
+        "Docebo Learning Analytics is really great for measuring the business impact of our learning journey"
+      ],
+      "docebo_solution": "Advanced Analytics correlates learning data with HR, CRM, and finance data to prove learning ROI to the CFO and board",
+      "stat": "59% of best-performing organizations integrate skills into L&D delivery vs 36% of everyone else — RedThread Research"
+    },
+    {
+      "id": "personalization_gap",
+      "label": "Cannot Personalize at Scale",
+      "description": "L&D teams are expected to deliver personalized learning paths to hundreds of employees but are running manual one-size-fits-all programs",
+      "severity": "high",
+      "customer_quotes": [
+        "79% of employees say the learning they received is not fully personalized",
+        "63% of learning leaders agree they are falling short on delivering personalized learning"
+      ],
+      "docebo_solution": "AgentHub delivers individualized learning paths automatically — skills gaps trigger targeted paths without manual assignment",
+      "stat": "79% of employees say learning is not personalized to them — Docebo AI Readiness Gap Report 2026"
+    },
+    {
+      "id": "skills_visibility",
+      "label": "No Real-Time Skills Picture",
+      "description": "Organizations cannot see their workforce capability in real time — skills data is static spreadsheets not a dynamic map tied to learning",
+      "severity": "high",
+      "customer_quotes": [
+        "We need a better manager dashboard where supervisors can see what employees are overdue in training"
+      ],
+      "docebo_solution": "Skills Intelligence surfaces roles, proficiencies, and inferred skills across the workforce — a real, dynamic picture updated continuously",
+      "stat": "Skills gaps trigger targeted learning paths — the Detect, Grow, Validate loop"
+    },
+    {
+      "id": "ai_readiness_gap",
+      "label": "Workforce Not AI-Ready",
+      "description": "85% of employees say training does not help them use AI in their role — organizations have deployed AI tools but employees cannot use them",
+      "severity": "high",
+      "customer_quotes": [
+        "85% of employees say the training they receive does not help them use AI in their role",
+        "1 in 5 employees have not received any AI training at all",
+        "Only 9% of organizations have used AI to fully redefine their workflows"
+      ],
+      "docebo_solution": "AgentHub delivers AI literacy learning paths personalized to role — employees learn AI in the flow of work not in a classroom",
+      "stat": "AI literacy is the #1 priority for both employees and learning leaders over the next 12-18 months — Docebo 2026 report"
+    },
+    {
+      "id": "content_creation_time",
+      "label": "Content Creation Takes Too Long",
+      "description": "Creating course content is slow — L&D teams spend weeks producing materials that could be generated in hours with AI",
+      "severity": "medium",
+      "customer_quotes": [
+        "One-off knowledge becomes a course. A scattered wiki becomes a skills campaign. A product release note becomes an interactive podcast"
+      ],
+      "docebo_solution": "Content Creator + AgentHub generates course outlines, assessments, and media plans from existing documents — Drive, Confluence, SharePoint, Docebo catalog"
+    }
+  ],
+  "products": [
+    {
+      "id": "agenthub",
+      "name": "Docebo AgentHub",
+      "also_known_as": [
+        "AgentHub",
+        "agent hub",
+        "AI agents",
+        "agentic AI",
+        "Docebo agents"
+      ],
+      "availability": "Coming Fall 2026 — announced at Docebo Inspire April 2026, not yet live",
+      "tagline": "Agents that don't just assist, they do the work",
+      "positioning": "Build custom AI agents that know your company. AgentHub connects your systems, skills data, and learning content, putting it all to work on what actually matters: your people.",
+      "key_differentiator": "Generic AI gives generic answers. AgentHub acts on what your organization actually knows — connected to everything you already run on. Not a separate product. Built into Docebo.",
+      "no_code": true,
+      "connectors": "20+ enterprise connectors including Confluence, SharePoint, Google Drive, Salesforce, Slack, 365Talents skills profiles, Docebo learning data",
+      "security": "Permission-aware, full audit trails, role-based access controls, ISO 27001, SOC 1+2, GDPR, CCPA certified. Docebo never trains a model on your data.",
+      "use_cases": [
+        "Compliance Triage — review overdue compliance, send personalized reminders automatically",
+        "Skill Gap Scout — analyze role profiles, flag missing skills against learning completion",
+        "Quiz Maker — turn any document or URL into a ready-to-publish assessment in minutes",
+        "Career Path Builder — map employee skills to internal roles, recommend learning journey",
+        "Onboarding Architect — generate 30-60-90 day learning plan for new hire role and location",
+        "Launch Announcer — draft and send multi-channel comms plan for any new learning program",
+        "Enrollment Detective — find learners who started but never finished, send re-engagement",
+        "SME Interviewer — turn 20-minute SME transcript into structured course outline"
+      ],
+      "proof_points": [
+        "20+ enterprise connectors out of the box — no integration backlog",
+        "24/7 autonomous operation — agents run on schedule without human intervention",
+        "Zero lines of code — if you can describe a workflow, you can build an agent",
+        "Full audit trail for every agent action — enterprise governance built in"
+      ],
+      "campaign_motion": "Existing Docebo LMS customers only — early access and waitlist pipeline for Fall 2026 launch. These are warm accounts who trust the platform. Campaign goals must be early access sign-ups or waitlist demo requests, never standard product demos. Frame as exclusive early access for existing customers.",
+      "audience": "existing_customers_only",
+      "timing": "pre-launch pipeline build — product available Fall 2026",
+      "persona_ids": [
+        "vp_ld",
+        "cpo",
+        "ld_program_manager"
+      ],
+      "pain_ids": [
+        "admin_overload",
+        "personalization_gap",
+        "content_creation_time",
+        "ai_readiness_gap"
+      ],
+      "email_examples": {
+        "vp_ld": {
+          "subject_lines": [
+            "Your L&D team is spending 60% of their time on admin. AgentHub is built to fix that.",
+            "The compliance reminder your team sends every week — what if an agent did it for you?",
+            "First agent, one afternoon, no IT ticket."
+          ],
+          "hook": "Most L&D teams know exactly which tasks eat their week. The problem isn't identifying them — it's that no one has given you a way to automate them without a developer."
+        },
+        "cpo": {
+          "subject_lines": [
+            "85% of your employees say training doesn't help them use AI. Here's what's different.",
+            "Your AI tools are deployed. Your people aren't ready to use them — yet.",
+            "AI literacy can't be a one-time course. Here's how the fastest-moving organizations are fixing that."
+          ],
+          "hook": "Your organization has invested in AI tools. The adoption gap that follows is predictable — and now preventable."
+        },
+        "ld_program_manager": {
+          "subject_lines": [
+            "You described a workflow. AgentHub built it.",
+            "That enrollment backlog you've been putting off — AgentHub handles it tonight.",
+            "Zero code. First agent live today."
+          ],
+          "hook": "If you can describe what you want done, AgentHub can build the agent that does it. No IT ticket. No developer. Just your workflow, running on its own."
+        }
+      },
+      "icp": {
+        "company_size": "500+ employees",
+        "revenue_range": "$50M+ ARR",
+        "industries": ["B2B SaaS", "Financial Services", "Healthcare", "Manufacturing", "Technology"],
+        "tech_signals": [
+          "Existing Docebo LMS customer (required — expansion motion only)",
+          "Confluence or SharePoint in use (agent connector readiness)",
+          "Slack or Salesforce in tech stack"
+        ],
+        "exclude": [
+          "Net-new Docebo prospects — expansion only, no cold acquisition",
+          "Organizations on Docebo free trial",
+          "SMB under 200 employees"
+        ]
+      }
+    },
+    {
+      "id": "skills_intelligence",
+      "name": "Docebo Skills Intelligence",
+      "tagline": "Infer skills, spot gaps, and develop talent",
+      "positioning": "Real-time dynamic skills map across the workforce — not a static spreadsheet",
+      "built_on": "Acquisition of 365Talents, AI-driven skills intelligence platform",
+      "proof_points": [
+        "Detects roles, proficiencies, and inferred skills automatically",
+        "Skills gaps trigger targeted learning paths without manual assignment",
+        "Updated continuously as employees complete learning and receive manager reviews"
+      ],
+      "persona_ids": [
+        "cpo",
+        "vp_ld"
+      ],
+      "pain_ids": [
+        "skills_visibility",
+        "no_roi_proof",
+        "personalization_gap"
+      ],
+      "campaign_motion": "expansion — existing Docebo LMS customers only; AI-powered skill gap detection and workforce skills data are not available to net-new prospects",
+      "email_examples": {
+        "vp_ld": {
+          "subject_lines": [
+            "Your skills data is a spreadsheet. It should be a living map.",
+            "Skill gaps don't wait for your next review cycle.",
+            "What if skill gaps triggered learning paths automatically — without a manual assignment?"
+          ],
+          "hook": "Every quarter, the same question: do we know what our people can actually do? Skills Intelligence replaces the guess with a dynamic, continuously updated map — tied directly to learning."
+        },
+        "cpo": {
+          "subject_lines": [
+            "59% of best-performing organizations integrate skills into L&D. Here's what they know.",
+            "Your board wants to know the organization is AI-ready. Here's the data to show them.",
+            "Skills data shouldn't live in a spreadsheet. Here's what real-time looks like."
+          ],
+          "hook": "Best-performing organizations don't guess at workforce readiness. They know which teams have the skills to execute — and which don't. Skills Intelligence makes that visible before it becomes a problem."
+        }
+      },
+      "icp": {
+        "company_size": "500–5000 employees",
+        "revenue_range": "$50M–$500M ARR",
+        "industries": ["B2B SaaS", "Financial Services", "Professional Services", "Healthcare", "Manufacturing"],
+        "tech_signals": [
+          "Existing Docebo LMS customer (required — expansion only)",
+          "Workday or SAP SuccessFactors in HRIS stack (integration readiness signal)",
+          "Active use of 365Talents profiles"
+        ],
+        "exclude": [
+          "Net-new Docebo prospects — expansion only",
+          "Organizations without a formal L&D or HR function",
+          "SMB under 200 employees"
+        ]
+      }
+    },
+    {
+      "id": "enterprise_knowledge",
+      "name": "Docebo Enterprise Knowledge",
+      "tagline": "Get trusted answers right when you need them",
+      "positioning": "AI-powered knowledge search across all enterprise sources — the foundation of the Marketing Brain",
+      "proof_points": [
+        "Searches across Drive, Confluence, SharePoint, Docebo catalog simultaneously",
+        "Returns trusted answers not just links",
+        "Governance layer ensures content is current and attributed"
+      ],
+      "persona_ids": [
+        "vp_ld",
+        "ld_program_manager"
+      ],
+      "pain_ids": [
+        "content_creation_time",
+        "admin_overload"
+      ],
+      "campaign_motion": "expansion — existing Docebo LMS customers seeking to connect knowledge across the enterprise into a single trusted search layer",
+      "icp": {
+        "company_size": "500–5000 employees",
+        "revenue_range": "$50M–$500M ARR",
+        "industries": ["B2B SaaS", "Professional Services", "Financial Services", "Technology"],
+        "tech_signals": [
+          "Existing Docebo LMS customer (required — expansion only)",
+          "Confluence, SharePoint, or Google Drive as primary knowledge repository"
+        ],
+        "exclude": [
+          "Net-new Docebo prospects — expansion only",
+          "Organizations already using Microsoft 365 Copilot as primary search (potential overlap blocker)"
+        ]
+      }
+    },
+    {
+      "id": "advanced_analytics",
+      "name": "Docebo Advanced Analytics",
+      "tagline": "Bring learning data into your BI tools",
+      "positioning": "Correlate learning metrics with HR, CRM, and finance data to prove ROI",
+      "proof_points": [
+        "Connects learning completion to retention and performance data",
+        "Ready-to-analyze data in your BI tools",
+        "Executive-ready dashboards that speak the language of the CFO"
+      ],
+      "persona_ids": [
+        "cpo",
+        "vp_ld"
+      ],
+      "pain_ids": [
+        "no_roi_proof"
+      ],
+      "campaign_motion": "expansion — existing Docebo LMS customers who need to prove L&D ROI to finance and the board",
+      "icp": {
+        "company_size": "1000+ employees",
+        "revenue_range": "$100M+ ARR",
+        "industries": ["Financial Services", "Healthcare", "Manufacturing", "B2B SaaS", "Technology"],
+        "tech_signals": [
+          "Existing Docebo LMS customer (required — expansion only)",
+          "Tableau, PowerBI, or Looker in BI stack (readiness to consume learning data)",
+          "Salesforce CRM in use"
+        ],
+        "exclude": [
+          "Net-new Docebo prospects — expansion only",
+          "Organizations without a BI infrastructure or data analytics team",
+          "SMB under 500 employees"
+        ]
+      }
+    },
+    {
+      "id": "headless_learning",
+      "name": "Docebo Headless Learning",
+      "also_known_as": [
+        "headless LMS",
+        "headless learning",
+        "embedded learning"
+      ],
+      "tagline": "Learning that lives where work actually happens",
+      "positioning": "Inject personalized learning experiences directly into any application or workflow — no context switch, no separate platform",
+      "key_differentiator": "Learning embedded natively into existing tools employees already use — Slack, Salesforce, custom apps — without rebuilding anything",
+      "proof_points": [
+        "Deploy learning inside any existing application without IT rebuilding the stack",
+        "Employees learn in the tools they already use daily — zero context switch",
+        "L&D teams control the experience without depending on engineering"
+      ],
+      "persona_ids": [
+        "vp_ld",
+        "ld_program_manager"
+      ],
+      "pain_ids": [
+        "admin_overload",
+        "personalization_gap"
+      ],
+      "campaign_motion": "expansion — existing Docebo LMS customers ready to extend learning beyond the platform",
+      "icp": {
+        "company_size": "1000+ employees with an internal engineering team",
+        "revenue_range": "$50M+ ARR",
+        "industries": ["B2B SaaS", "Technology", "Financial Services"],
+        "tech_signals": [
+          "Existing Docebo LMS customer (required — expansion only)",
+          "Internal portals or custom-built apps (signal: need to embed learning in existing tools)",
+          "Salesforce with embedded workflows"
+        ],
+        "exclude": [
+          "Net-new Docebo prospects — expansion only",
+          "Organizations without internal engineering capacity to integrate APIs",
+          "Organizations seeking a standalone out-of-the-box LMS experience"
+        ]
+      }
+    },
+    {
+      "id": "roleplay",
+      "name": "Docebo Roleplay",
+      "also_known_as": [
+        "AI roleplay",
+        "roleplay",
+        "AI virtual coach",
+        "scenario training"
+      ],
+      "tagline": "Practice real skills. Perform with confidence.",
+      "positioning": "AI-powered roleplay simulations that let every employee practice real scenarios, get instant feedback, and build confidence before the moment that matters",
+      "key_differentiator": "Scale scenario-based training without hiring more coaches — AI plays the customer, the objection, the difficult conversation",
+      "proof_points": [
+        "Sales reps practice objection handling unlimited times before a real call",
+        "Instant AI feedback after every simulation — no waiting for manager review",
+        "Scales coaching to every employee not just top performers"
+      ],
+      "persona_ids": [
+        "vp_ld",
+        "ld_program_manager"
+      ],
+      "pain_ids": [
+        "admin_overload",
+        "personalization_gap"
+      ],
+      "campaign_motion": "expansion or net-new — strongest fit for sales enablement and customer-facing teams",
+      "icp": {
+        "company_size": "200–5000 employees",
+        "revenue_range": "$20M+ ARR",
+        "industries": ["B2B SaaS", "Financial Services", "Healthcare", "Insurance", "Retail"],
+        "tech_signals": [
+          "Salesforce or HubSpot in CRM stack (sales organization signal)",
+          "Gong or Chorus in use (signal: sales training is already a priority)",
+          "Customer-facing teams of 20+ reps"
+        ],
+        "exclude": [
+          "Organizations without customer-facing or sales teams",
+          "Internal-only L&D teams with no sales enablement mandate"
+        ]
+      }
+    },
+    {
+      "id": "content_creator",
+      "name": "Docebo Content Creator",
+      "also_known_as": [
+        "content creation",
+        "course creation",
+        "AI content",
+        "Creator"
+      ],
+      "tagline": "Build courses fast. Without the bottleneck.",
+      "positioning": "AI-powered eLearning authoring that turns existing documents, decks, and knowledge into high-quality courses in hours not weeks",
+      "key_differentiator": "No instructional design background required — AI handles course structure, assessment generation, and media planning from source documents",
+      "proof_points": [
+        "Turn a product release note into an interactive course in one afternoon",
+        "AI generates outline, assessment, and media plan from any source document",
+        "No instructional design expertise required — L&D teams ship faster"
+      ],
+      "persona_ids": [
+        "ld_program_manager",
+        "vp_ld"
+      ],
+      "pain_ids": [
+        "content_creation_time",
+        "admin_overload"
+      ],
+      "campaign_motion": "expansion or net-new — strongest fit for L&D teams drowning in content backlog",
+      "icp": {
+        "company_size": "200–5000 employees",
+        "revenue_range": "$20M+ ARR",
+        "industries": ["Any — strongest for orgs with large content backlogs and small L&D teams"],
+        "tech_signals": [
+          "Confluence, SharePoint, or Google Drive as primary content repository (source documents to convert)",
+          "L&D team of 1–3 people managing a large course request queue",
+          "Docebo Learn with low course publish rate relative to content requests"
+        ],
+        "exclude": [
+          "Organizations with a dedicated instructional design team wanting full authoring control",
+          "Organizations that purchase off-the-shelf content only and never create custom courses"
+        ]
+      }
+    },
+    {
+      "id": "harmony_ai",
+      "name": "Docebo Harmony AI",
+      "also_known_as": [
+        "Harmony",
+        "Harmony AI",
+        "AI search",
+        "neural search"
+      ],
+      "tagline": "Ask once. Get the right answer.",
+      "positioning": "AI-powered search and discovery across all learning content — learners find exactly what they need without browsing catalogs or filing support tickets",
+      "key_differentiator": "Searches across the entire Docebo content library and enterprise knowledge sources simultaneously — one query, trusted answer",
+      "proof_points": [
+        "Learners find relevant content without browsing catalogs or asking L&D",
+        "Reduces support tickets from employees who cannot find training materials",
+        "AI understands intent not just keywords — surfaces the right content first time"
+      ],
+      "persona_ids": [
+        "ld_program_manager",
+        "vp_ld"
+      ],
+      "pain_ids": [
+        "admin_overload",
+        "personalization_gap"
+      ],
+      "campaign_motion": "expansion — existing Docebo customers with large content libraries",
+      "icp": {
+        "company_size": "500+ employees",
+        "revenue_range": "$25M+ ARR",
+        "industries": ["Any — strongest for orgs with 100+ active courses in Docebo catalog"],
+        "tech_signals": [
+          "Existing Docebo LMS customer with 100+ published courses (required)",
+          "High support ticket volume related to learners not finding content",
+          "L&D teams spending significant time answering 'where is the training on X?' questions"
+        ],
+        "exclude": [
+          "New Docebo deployments still building their content library (fewer than 50 active courses)",
+          "Organizations buying off-the-shelf content bundles without a custom catalog"
+        ]
+      }
+    }
+  ],
+  "competitors": [
+    {
+      "id": "cornerstone",
+      "name": "Cornerstone OnDemand",
+      "positioning": "Legacy enterprise talent management and compliance platform",
+      "docebo_wins": [
+        "More modern UI — significantly easier for admins and learners",
+        "Faster implementation — Docebo deploys in months not years",
+        "AI is native not bolted on",
+        "Better multi-audience support — employees, partners, customers from one platform"
+      ],
+      "docebo_loses": [
+        "Cornerstone has deeper HRIS integration in some enterprise stacks",
+        "Cornerstone has stronger compliance depth for regulated industries"
+      ],
+      "displacement_message": "Cornerstone was built for compliance in the 2000s. Docebo was built for AI-powered learning in 2026."
+    },
+    {
+      "id": "sana",
+      "name": "Sana Labs",
+      "positioning": "AI-native learning platform — no legacy LMS constraints",
+      "docebo_wins": [
+        "Docebo has enterprise governance and compliance Sana lacks",
+        "Docebo supports multi-audience — employees, partners, customers — Sana is primarily internal",
+        "Docebo has 20 years of enterprise learning infrastructure",
+        "3900+ customers vs Sana's smaller install base"
+      ],
+      "docebo_loses": [
+        "Sana is perceived as more AI-native — no legacy baggage",
+        "Sana deploys faster for smaller organizations",
+        "Sana pricing is more accessible for mid-market"
+      ],
+      "displacement_message": "Sana is fast to deploy but light on governance. Docebo gives you AI-native learning with enterprise-grade control."
+    },
+    {
+      "id": "talentlms",
+      "name": "TalentLMS",
+      "positioning": "Budget-friendly LMS for SMB and mid-market",
+      "docebo_wins": [
+        "Docebo has significantly more advanced AI capabilities",
+        "Docebo scales to enterprise — TalentLMS hits a ceiling",
+        "Docebo has multi-audience support TalentLMS lacks",
+        "Docebo analytics are enterprise-grade"
+      ],
+      "docebo_loses": [
+        "TalentLMS starts free and has public pricing — Docebo starts at $25K+",
+        "TalentLMS deploys in days — Docebo takes months",
+        "TalentLMS is simpler for organizations that just need basic LMS"
+      ],
+      "displacement_message": "TalentLMS is fine for simple training. When you need AI, scale, and business impact — that's Docebo."
+    }
+  ],
+  "channels": [
+    {
+      "id": "hubspot_email",
+      "name": "HubSpot Email Sequences",
+      "owner": "Demand Generation",
+      "best_for_personas": [
+        "vp_ld",
+        "ld_program_manager"
+      ],
+      "use_case": "Nurture existing Docebo customers toward upsell — AgentHub, Skills Intelligence expansion",
+      "docebo_approach": "Plain-text, outcome-led sequences referencing specific pain points from CRM data — not generic newsletters"
+    },
+    {
+      "id": "linkedin_sponsored",
+      "name": "LinkedIn Sponsored Content",
+      "owner": "Paid Social",
+      "best_for_personas": [
+        "vp_ld",
+        "cpo"
+      ],
+      "use_case": "Top-of-funnel awareness among L&D and People leaders at target accounts",
+      "docebo_approach": "Single-image ads with outcome-led headlines — no feature lists, no product screenshots. Skepticism-aware copy."
+    },
+    {
+      "id": "in_product",
+      "name": "In-Product Banner and Modal",
+      "owner": "Product Marketing + Customer Success",
+      "best_for_personas": [
+        "ld_program_manager",
+        "vp_ld"
+      ],
+      "use_case": "Intercept eligible accounts inside the platform at the moment of highest intent",
+      "docebo_approach": "Two-variant in-app message — passive banner for general eligible accounts, triggered modal for high-activity accounts"
+    },
+    {
+      "id": "webinar",
+      "name": "Live Webinar",
+      "owner": "Field Marketing + Product Marketing",
+      "best_for_personas": [
+        "vp_ld",
+        "cpo"
+      ],
+      "use_case": "Convert mid-funnel prospects through peer proof — customer story plus live demo",
+      "docebo_approach": "45-minute session: 20-min customer story, 15-min live product walkthrough, 10-min Q&A. Always include an early adopter as speaker."
+    },
+    {
+      "id": "qualified_outbound",
+      "name": "Qualified AI Outbound",
+      "owner": "Demand Generation + BDR",
+      "best_for_personas": [
+        "vp_ld",
+        "cpo"
+      ],
+      "use_case": "AI-powered personalized outbound sequences to target accounts — removes email from BDR plates",
+      "docebo_approach": "Signal-based outbound — trigger sequences based on in-product behavior, job change signals, or content engagement"
+    },
+    {
+      "id": "customer_success_outreach",
+      "name": "CSM-Led Expansion Outreach",
+      "owner": "Customer Success",
+      "best_for_personas": [
+        "vp_ld",
+        "ld_program_manager"
+      ],
+      "use_case": "Expansion into AgentHub and Skills Intelligence for existing Docebo LMS customers",
+      "docebo_approach": "CSM introduces new capability in QBR or business review — warm introduction supported by marketing leave-behinds"
+    }
+  ],
+  "proof_points": [
+    {
+      "id": "admin_cost_reduction",
+      "claim": "Up to 80% decrease in administrative costs",
+      "source": "Docebo customer outcomes data",
+      "use_for_personas": [
+        "vp_ld",
+        "cpo"
+      ],
+      "use_for_pains": [
+        "admin_overload",
+        "no_roi_proof"
+      ],
+      "use_for_products": []
+    },
+    {
+      "id": "cost_reduction",
+      "claim": "Up to 20% overall cost reduction",
+      "source": "Docebo customer outcomes data",
+      "use_for_personas": [
+        "cpo"
+      ],
+      "use_for_pains": [
+        "no_roi_proof"
+      ],
+      "use_for_products": []
+    },
+    {
+      "id": "bethany_care",
+      "claim": "Bethany Care Society reduced orientation costs by 24% and saved 372 educator hours annually",
+      "source": "Docebo case study",
+      "use_for_personas": [
+        "vp_ld",
+        "ld_program_manager"
+      ],
+      "use_for_pains": [],
+      "use_for_products": []
+    },
+    {
+      "id": "midfirst_bank",
+      "claim": "MidFirst Bank saved thousands in administrative costs through AI automation",
+      "source": "Docebo case study",
+      "use_for_personas": [
+        "vp_ld",
+        "cpo"
+      ],
+      "use_for_pains": [
+        "admin_overload"
+      ],
+      "use_for_products": [
+        "content_creator"
+      ]
+    },
+    {
+      "id": "ai_readiness_stat",
+      "claim": "85% of employees say training does not help them use AI in their role",
+      "source": "Docebo AI Readiness Gap Report 2026",
+      "use_for_personas": [
+        "cpo",
+        "vp_ld"
+      ],
+      "use_for_pains": [
+        "ai_readiness_gap"
+      ],
+      "use_for_products": [
+        "agenthub"
+      ]
+    },
+    {
+      "id": "skills_performance_stat",
+      "claim": "59% of best-performing organizations integrate skills into L&D delivery vs 36% of everyone else",
+      "source": "RedThread Research via Docebo",
+      "use_for_personas": [
+        "cpo",
+        "vp_ld"
+      ],
+      "use_for_pains": [
+        "skills_visibility"
+      ],
+      "use_for_products": [
+        "skills_intelligence"
+      ]
+    },
+    {
+      "id": "personalization_gap_stat",
+      "claim": "79% of employees say learning is not personalized to them",
+      "source": "Docebo AI Readiness Gap Report 2026",
+      "use_for_personas": [
+        "vp_ld",
+        "cpo"
+      ],
+      "use_for_pains": [
+        "personalization_gap"
+      ],
+      "use_for_products": [
+        "roleplay",
+        "harmony_ai",
+        "headless_learning"
+      ]
+    },
+    {
+      "id": "afternoon_deployment",
+      "claim": "First AgentHub agent deployable in a single afternoon — no IT ticket required",
+      "source": "Docebo AgentHub product page",
+      "use_for_personas": [
+        "vp_ld",
+        "ld_program_manager"
+      ],
+      "use_for_pains": [],
+      "use_for_products": [
+        "agenthub"
+      ]
+    },
+    {
+      "id": "disguise_case",
+      "claim": "Disguise increased active learners 4x and training revenue 45% with Docebo",
+      "source": "Docebo case study",
+      "use_for_personas": [
+        "vp_ld",
+        "ld_program_manager"
+      ],
+      "use_for_pains": [
+        "no_roi_proof"
+      ],
+      "use_for_products": []
+    },
+    {
+      "id": "customer_education_roi",
+      "claim": "96% of organizations see positive returns from customer education programs",
+      "source": "Docebo research",
+      "use_for_personas": [
+        "cpo"
+      ],
+      "use_for_pains": [
+        "no_roi_proof"
+      ],
+      "use_for_products": [
+        "headless_learning"
+      ]
+    },
+    {
+      "id": "formalized_education_impact",
+      "claim": "Formalized education programs drive 6.2% revenue increase and 7.4% retention boost",
+      "source": "Docebo research",
+      "use_for_personas": [
+        "cpo",
+        "vp_ld"
+      ],
+      "use_for_pains": [
+        "no_roi_proof"
+      ],
+      "use_for_products": []
+    }
+  ],
+  "notable_customers": [
+    "Netflix",
+    "Zoom",
+    "Lululemon",
+    "McLaren",
+    "Lenovo",
+    "Thermo Fisher",
+    "New York Life",
+    "Walmart",
+    "Amazon",
+    "MidFirst Bank",
+    "Bethany Care Society"
+  ],
+  "company_facts": {
+    "founded": 2005,
+    "headquartered": "Toronto, Canada",
+    "listed": "Nasdaq: DCBO, TSX: DCBO",
+    "customers": "3900+",
+    "employees": "~900",
+    "recent_acquisitions": [
+      "365Talents (skills intelligence)",
+      "Zive (enterprise AI and knowledge)"
+    ],
+    "flagship_event": "Docebo Inspire — annual customer conference"
+  },
+  "marketing_team": {
+    "demand_generation": "Owns email sequences, paid campaigns, demo pipeline, MQL to SQL conversion",
+    "product_marketing": "Owns positioning, launch campaigns, battle cards, sales enablement, competitive intelligence",
+    "content": "Blog, thought leadership, case studies, webinar content",
+    "paid_social": "LinkedIn sponsored content, retargeting, lookalike audiences",
+    "customer_success": "Expansion, QBR conversations, case study sourcing",
+    "customer_marketing": "Customer advocacy, case studies, reference programs, customer speakers",
+    "field_marketing": "Events, webinars, regional programs, Docebo Inspire",
+    "marketing_ops": "HubSpot workflows, automation, lead routing, campaign reporting",
+    "revops": "Salesforce, attribution modeling, pipeline reporting, forecast"
+  },
+  "tech_stack": {
+    "crm": "Salesforce",
+    "marketing_automation": "HubSpot",
+    "ai_sdr": "Qualified",
+    "knowledge_search": "Glean",
+    "call_intelligence": "Gong",
+    "project_management": "Asana",
+    "paid_social": "LinkedIn Campaign Manager",
+    "signal_based_outbound": "UserGems"
+  },
+  "relationships": [
+    {
+      "from": "vp_ld",
+      "to": "admin_overload",
+      "type": "experiences_pain"
+    },
+    {
+      "from": "vp_ld",
+      "to": "no_roi_proof",
+      "type": "experiences_pain"
+    },
+    {
+      "from": "vp_ld",
+      "to": "personalization_gap",
+      "type": "experiences_pain"
+    },
+    {
+      "from": "cpo",
+      "to": "skills_visibility",
+      "type": "experiences_pain"
+    },
+    {
+      "from": "cpo",
+      "to": "ai_readiness_gap",
+      "type": "experiences_pain"
+    },
+    {
+      "from": "cpo",
+      "to": "no_roi_proof",
+      "type": "experiences_pain"
+    },
+    {
+      "from": "ld_program_manager",
+      "to": "admin_overload",
+      "type": "experiences_pain"
+    },
+    {
+      "from": "ld_program_manager",
+      "to": "content_creation_time",
+      "type": "experiences_pain"
+    },
+    {
+      "from": "agenthub",
+      "to": "admin_overload",
+      "type": "solves_pain"
+    },
+    {
+      "from": "agenthub",
+      "to": "personalization_gap",
+      "type": "solves_pain"
+    },
+    {
+      "from": "agenthub",
+      "to": "ai_readiness_gap",
+      "type": "solves_pain"
+    },
+    {
+      "from": "agenthub",
+      "to": "vp_ld",
+      "type": "ideal_persona"
+    },
+    {
+      "from": "agenthub",
+      "to": "cpo",
+      "type": "ideal_persona"
+    },
+    {
+      "from": "skills_intelligence",
+      "to": "skills_visibility",
+      "type": "solves_pain"
+    },
+    {
+      "from": "skills_intelligence",
+      "to": "cpo",
+      "type": "ideal_persona"
+    },
+    {
+      "from": "advanced_analytics",
+      "to": "no_roi_proof",
+      "type": "solves_pain"
+    },
+    {
+      "from": "cornerstone",
+      "to": "agenthub",
+      "type": "competes_with"
+    },
+    {
+      "from": "sana",
+      "to": "agenthub",
+      "type": "competes_with"
+    },
+    {
+      "from": "hubspot_email",
+      "to": "vp_ld",
+      "type": "best_channel_for"
+    },
+    {
+      "from": "in_product",
+      "to": "ld_program_manager",
+      "type": "best_channel_for"
+    },
+    {
+      "from": "webinar",
+      "to": "cpo",
+      "type": "best_channel_for"
+    }
+  ],
+  "brand_voice": {
+    "manifesto": "Never Stop Learning",
+    "visual_direction": "Neo(n) Renaissance — classical forms, modern color, structure paired with movement",
+    "tone": "Direct, opinionated, comfortable expressing a point of view. Docebo has a damn opinion.",
+    "enemy": "Category language — everyone sounds like a leader, everyone has the same opinion. Docebo is not that.",
+    "belief": "Learning is foundational infrastructure for organizations operating in constantly changing environments",
+    "problem_we_solve": "Static systems that document work instead of adapting as work keeps changing",
+    "never_say": [
+      "leading platform",
+      "robust solution",
+      "seamlessly integrates",
+      "best-in-class",
+      "leverage",
+      "synergies",
+      "empower"
+    ],
+    "always_say": [
+      "foundational",
+      "readiness",
+      "capability",
+      "proof not anecdotes",
+      "living system"
+    ],
+    "kyle_quote": "The future belongs to the learners, and to the organizations that treat learning as a living system rather than a static function"
+  },
+  "company_context": {
+    "revenue_2025": "$230M+ ARR projected",
+    "customers": "3,800+",
+    "nps_2026": 62,
+    "direct_sales_arr_share": "70% of new ARR",
+    "partner_network": "100+ partners, 25% of lead volume",
+    "flagship_event": "Docebo Inspire — 5,000+ in-person, 15,000 virtual attendees in 2025",
+    "blog_traffic": "1.2M+ organic visits to Learning Insights annually",
+    "digital_budget_share": "35% of marketing budget on digital — LinkedIn and SEO primary",
+    "abm_tools": [
+      "6sense",
+      "Demandbase"
+    ],
+    "positioning": "Intelligence Layer of the modern enterprise",
+    "brand_pillars": [
+      "Innovation",
+      "Agility",
+      "User Experience"
+    ],
+    "learning_philosophy": "70:20:10 — social and experiential learning as USP",
+    "responsible_ai": "Introduced 2025 — data privacy, explainable algorithms, governance",
+    "analyst_recognition": "Gartner Enterprise LMS Magic Quadrant Leader through 2025",
+    "notable_customers": [
+      "Amazon",
+      "Samsung",
+      "Netflix",
+      "Zoom",
+      "Lululemon",
+      "McLaren",
+      "Lenovo",
+      "Booking.com",
+      "La-Z-Boy",
+      "Amnesty International"
+    ],
+    "campaign_results": {
+      "human_centric_ai_2025": "4.5% CTR, 15% upsell revenue lift in 6 months",
+      "ai_personalization": "18% longer session duration, 22% better completion rates"
+    },
+    "product_suite": [
+      "AgentHub",
+      "Skills Intelligence",
+      "Enterprise Knowledge",
+      "MCP",
+      "Harmony AI",
+      "Roleplay",
+      "Content Creator",
+      "Advanced Analytics",
+      "Companion",
+      "Headless Learning",
+      "Gamification",
+      "eCommerce",
+      "Communities"
+    ]
+  }
+}
